@@ -1,0 +1,11 @@
+{
+  "name": "juliedavila-skills",
+  "owner": { "name": "Julie Davila" },
+  "plugins": [
+    {
+      "name": "claude-skills",
+      "source": "./",
+      "description": "Thinking and analysis skills for Claude Code."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "claude-skills",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "port": "bun scripts/port.ts",
+    "check": "bun scripts/check.ts",
+    "install-skills": "bun scripts/install.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
