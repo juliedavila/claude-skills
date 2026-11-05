@@ -67,18 +67,25 @@ Thinker pages marked **(TD)** have a full editorial reading, including each thin
 - What is the rollback or roll-forward story, and how long does it take?
 - Does trunk stay releasable? How long do branches live?
 - What happens to work when the pipeline is red?
+- **Tests.** How long does the commit stage take to give a developer a trustworthy answer? Is most of the checking in fast unit and component tests, with a thin layer of slow end-to-end tests? How are flaky tests handled: quarantined and fixed, or rerun until green? Are acceptance tests written in the problem's own terms, so they survive changes to the UI and the implementation?
+- **Database and schema changes.** Can each schema change ship without downtime and without a coordinated release of every consumer? Is it split into expand (add the new shape alongside the old), migrate, then contract (remove the old shape once nothing uses it)? Does the migration run in the pipeline like any other change?
+- **Environments.** Are environments built from code (infrastructure as code), so staging and production differ only in declared configuration? Can a fresh environment be created on demand?
 
-**Smells:** environment-specific builds; manual sign-off steps inside the pipeline; a staging environment treated as proof of production readiness; long-lived release branches; "hardening sprints"; no rollback plan; a migration that cannot be run backwards with no flag to hide it.
+**Smells:** environment-specific builds; manual sign-off steps inside the pipeline; a staging environment treated as proof of production readiness; long-lived release branches; "hardening sprints"; no rollback plan; a migration that cannot be run backwards with no flag to hide it; schema changes that require every consumer to deploy at once; a long end-to-end suite as the main safety net; flaky tests that teams rerun until they pass; environments configured by hand, so staging drifts from production.
 
-**Strengths to name:** pipeline as the only route to deploy; build once, promote everywhere; flags or canaries; automated rollback; trunk-based development with short-lived branches.
+**Strengths to name:** pipeline as the only route to deploy; build once, promote everywhere; flags or canaries; automated rollback; trunk-based development with short-lived branches; a commit stage that answers in minutes; expand-and-contract schema changes; environments built from version-controlled code.
 
 **Grounding:**
 - Jez Humble **(TD)** and Dave Farley **(TD)**: the deployment pipeline (a release candidate carried through gates, the same binary in every environment), continuous delivery, and release decoupled from deploy. *Continuous Delivery* (2010).
 - Martin Fowler **(TD)** `martin-fowler`: continuous integration, integrating to mainline at least daily, verified by an automated build.
 - MinimumCD (minimumcd.org): a community checklist of minimum continuous delivery practices, including trunk-based development, daily integration, a pipeline that is the only way to deploy, stopping feature work when the pipeline is red, and on-demand rollback.
 - Charity Majors **(TD)** `charity-majors`: staging cannot reproduce production, so build the guardrails that make testing against real traffic safe.
+- Dave Farley **(TD)**: four-layer acceptance tests, written as specifications in the problem's terms, expressed through a domain-specific language and carried out by drivers that talk to the system, so the tests outlive changes to the interface.
+- The test pyramid: many fast, low-level tests and few slow end-to-end ones, from Mike Cohn, *Succeeding with Agile* (2009), and Fowler's "TestPyramid" bliki entry. Fowler's "Eradicating Non-Determinism in Tests" (2011) sets out why a flaky test is worse than no test: it teaches people to ignore red.
+- Expand and contract: Scott Ambler and Pramod Sadalage, *Refactoring Databases* (2006), on evolving a schema in small, reversible steps with a transition period; Danilo Sato's "ParallelChange" (2014) on Fowler's site names the expand, migrate, contract sequence.
+- Kief Morris, *Infrastructure as Code* (2016): environments defined in version control, rebuilt rather than patched, so they stay consistent.
 
-**Where this lens breaks:** Some targets cannot take continuous deployment: firmware, mobile app stores, on-premise customer installs, regulated releases with mandated review. Continuous delivery (always releasable) still applies even when continuous deployment does not. Review against that, not against "deploy on every commit".
+**Where this lens breaks:** Some targets cannot take continuous deployment: firmware, mobile app stores, on-premise customer installs, regulated releases with mandated review. Continuous delivery (always releasable) still applies even when continuous deployment does not. Review against that, not against "deploy on every commit". Expand and contract costs extra releases and a period of carrying two schemas; for a small internal database with one consumer, a short maintenance window can be the cheaper honest answer.
 
 ---
 
