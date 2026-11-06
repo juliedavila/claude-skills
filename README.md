@@ -12,6 +12,7 @@ Each skill is a folder with a `SKILL.md` that Claude loads when a request matche
 | **BitterPillEngineering** | A prompt, rules file or `CLAUDE.md` has grown and needs auditing for dead weight. |
 | **LearningConditions** | You are setting up, repairing or checking a learning practice. |
 | **DeliveryReview** | A design proposal, RFC or strategy deck would change how software gets built, shipped or run, and you want a lean and agile review of it. |
+| **WritingPartner** | A piece of business writing needs drafting, a critique or an edit, so it reads clearly to its reader and sounds like a person rather than a corporation or a model. |
 
 ## Install
 
