@@ -44,10 +44,10 @@ Choosing the register deserves its own decision, because "sound human" is often 
 
 If the document is one of the types below and that skill is available, use its structure and checklist as the structural layer, and apply this skill to paragraphs, sentences, voice, review and editing:
 
-- a decision memo or decision-meeting pre-read: `dalio-decision-memo`;
-- a strategy, planning, status or risk analysis: `dalio-strategy-analysis`;
-- a postmortem, diagnosis or set of operating principles: `dalio-diagnosis-principles`;
-- a README, runbook, reference, design doc, security finding, advisory or design feedback: `dalio-technical-docs`. That skill keeps authority over its own structure, headings, verification and reader-test kit. This skill adds register, voice and the fuller terse and verbose checks.
+- a decision memo or decision-meeting pre-read: `DalioDecisionMemo`;
+- a strategy, planning, status or risk analysis: `DalioStrategyAnalysis`;
+- a postmortem, diagnosis or set of operating principles: `DalioDiagnosisPrinciples`;
+- a README, runbook, reference, design doc, security finding, advisory or design feedback: `dalio-technical-docs` (if installed). That skill keeps authority over its own structure, headings, verification and reader-test kit. This skill adds register, voice and the fuller terse and verbose checks.
 
 This skill overrides the Dalio skills in two places. Arrow chains ("Goals → Problems → Diagnosis") don't belong in running prose; write the verbs. And every coined term, stage name or gauge name gets a plain definition at first use. Both are fine in a long book with a glossary and become exactly the shorthand readers can't follow in a two-page memo.
 

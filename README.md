@@ -1,6 +1,6 @@
 # claude-skills
 
-Thinking and analysis skills for [Claude Code](https://docs.claude.com/en/docs/claude-code/overview).
+Thinking, analysis and writing skills for [Claude Code](https://docs.claude.com/en/docs/claude-code/overview).
 Each skill is a folder with a `SKILL.md` that Claude loads when a request matches its description.
 
 | Skill | Use it when |
@@ -13,6 +13,9 @@ Each skill is a folder with a `SKILL.md` that Claude loads when a request matche
 | **LearningConditions** | You are setting up, repairing or checking a learning practice. |
 | **DeliveryReview** | A design proposal, RFC or strategy deck would change how software gets built, shipped or run, and you want a lean and agile review of it. |
 | **WritingPartner** | A piece of business writing needs drafting, a critique or an edit, so it reads clearly to its reader and sounds like a person rather than a corporation or a model. |
+| **DalioDecisionMemo** | A document asks someone to make a decision, in Ray Dalio's layered, expected-value style. |
+| **DalioStrategyAnalysis** | You are writing a strategy, plan, or recurring status or risk report, built on a model of how the system works and where it stands now. |
+| **DalioDiagnosisPrinciples** | You are writing up a postmortem or diagnosis once the causes are known, or drafting team operating principles. |
 
 ## Install
 
