@@ -3,6 +3,19 @@
 Versions follow [Semantic Versioning](https://semver.org). A new skill or a new workflow in an
 existing skill is a minor bump; a fix to an existing skill's text or tooling is a patch.
 
+## 0.4.0 - 2026-11-09
+
+- Added **VisualizeReview**: a review of the visual layer of anything made for human eyes (decks,
+  documents, pages, dashboards). Nine lenses from message and form fit through perception, integrity,
+  cognitive load, narrative order, layout, diagram semantics and access, with a fixed-template rule
+  for what the author cannot change. Missing visuals are findings, each with a sketch (Mermaid or a
+  text layout) from a Sketches reference. The extractor gains `--inventory`, a per-slide or
+  per-section count of pictures, charts, diagrams, tables and words for `.pptx` and `.docx`, and of
+  figures, tables, callouts and code blocks per section for Markdown and HTML.
+- A cold run against a public research brief found seventeen seams in the first draft, fixed before
+  release: table and callout questions in the lenses, a Markdown inventory, the sketch cap rule, and
+  a severity wording that contradicted Quick in all three review skills.
+
 ## 0.3.1 - 2026-11-09
 
 - Prompt audit of all twelve skills. Descriptions trimmed under the listing cutoff (ResilienceReview

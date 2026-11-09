@@ -1,7 +1,7 @@
 {
   "name": "claude-skills",
-  "version": "0.3.1",
-  "description": "Thinking, analysis and writing skills for Claude Code: first principles, red teaming, systems thinking, root cause analysis, writing and editing, resilience and delivery review, and more.",
+  "version": "0.4.0",
+  "description": "Thinking, analysis and writing skills for Claude Code: first principles, red teaming, systems thinking, root cause analysis, writing and editing, resilience, delivery and visual review, and more.",
   "author": { "name": "Julie Davila" },
   "license": "MIT",
   "repository": "https://github.com/juliedavila/claude-skills"

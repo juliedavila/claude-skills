@@ -46,7 +46,7 @@ Any finding the review deliberately softened because of a constraint (scale, an 
 
 ## Rules for each finding
 
-These rules apply to both workflows. The Quick workflow uses them with its own chat skeleton and no file; see `Workflows/Quick.md`.
+These rules apply to both workflows. The Quick workflow uses them with its own chat skeleton and no file; it ranks by these severity definitions without printing the labels. See `Workflows/Quick.md`.
 
 - **Severity.** High: a credible path to harm to people, loss or exposure of data, or loss of service with no recovery path; a defect source added with no fix capacity; a measure that will suppress reporting; blocks the proposal's own goal; or (for contradictions between artifacts) changes what is being approved. Medium: adds hazard, brittleness or backlog that a cheap change would remove. Low: polish, or a risk only under conditions that may not hold.
 - **Escape point is optional.** It belongs on defect-lifecycle holes (lens 3, and lens 8 where an incident's learning should have reached an earlier stage) and nowhere else. Most holes in an architecture review will not carry it. Do not force one.

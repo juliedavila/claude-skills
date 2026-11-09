@@ -44,7 +44,7 @@ Any finding the review deliberately softened because of a constraint (regulation
 
 ## Rules for each finding
 
-These rules apply to both workflows. The Quick workflow uses them with its own chat skeleton and no file; see `Workflows/Quick.md`.
+These rules apply to both workflows. The Quick workflow uses them with its own chat skeleton and no file; it ranks by these severity definitions without printing the labels. See `Workflows/Quick.md`.
 
 - **Severity.** High: will measurably slow delivery or degrade stability, blocks the proposal's own goal, or (for contradictions between artifacts) changes what is being approved. Medium: adds cost or risk that a cheap change would remove. Low: polish, or a risk only under conditions that may not hold.
 - **No orphan critiques.** A hole without a suggestion is not finished.
