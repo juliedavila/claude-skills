@@ -14,6 +14,7 @@ Each skill is a folder with a `SKILL.md` that Claude loads when a request matche
 | **DeliveryReview** | A design proposal, RFC or strategy deck would change how software gets built, shipped or run, and you want a lean and agile review of it. |
 | **WritingPartner** | A piece of business writing needs drafting, a critique or an edit, so it reads clearly to its reader and sounds like a person rather than a corporation or a model. |
 | **VisualizeReview** | A deck, document or page should be reviewed for whether its charts, diagrams, tables and layout carry the story, and for what should have been a visual and wasn't. |
+| **PanelReview** | A package should be reviewed from several angles at once: the review skills run as parallel seats in fresh contexts and their findings merge into one ranked review with an order of work. |
 | **DalioDecisionMemo** | A document asks someone to make a decision, in Ray Dalio's layered, expected-value style. |
 | **DalioStrategyAnalysis** | You are writing a strategy, plan, or recurring status or risk report, built on a model of how the system works and where it stands now. |
 | **ResilienceReview** | A design, architecture, operating model or defect and vulnerability program should be reviewed for how it fails, how defects get found and fixed, and how it recovers. |

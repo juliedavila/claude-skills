@@ -3,6 +3,14 @@
 Versions follow [Semantic Versioning](https://semver.org). A new skill or a new workflow in an
 existing skill is a minor bump; a fix to an existing skill's text or tooling is a patch.
 
+## 0.5.0 - 2026-11-09
+
+- Added **PanelReview**: runs several review skills over one package as parallel seats, each in a
+  fresh context, and merges their findings into one ranked review. Routing by package type, an
+  identical facts brief for every seat, duplicates folded by citation, a stated precedence for
+  conflicts (substance over structure over visuals over prose), and an order of work. Panel and Quick
+  workflows, with a serial fallback where the host cannot start subagents.
+
 ## 0.4.0 - 2026-11-09
 
 - Added **VisualizeReview**: a review of the visual layer of anything made for human eyes (decks,
