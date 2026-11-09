@@ -3,6 +3,19 @@
 Versions follow [Semantic Versioning](https://semver.org). A new skill or a new workflow in an
 existing skill is a minor bump; a fix to an existing skill's text or tooling is a patch.
 
+## 0.3.0 - 2026-11-09
+
+- Added **ResilienceReview**: a safety-science and resilience-engineering review of designs,
+  architectures, operating models and defect or vulnerability programs. Nine lenses with the defect
+  lifecycle as a first-class lens, an optional escape-point field on defect findings, two workflows
+  (Review, Quick) and the same `.pptx`/`.docx` extractor as DeliveryReview.
+- DeliveryReview now points its production lens at ResilienceReview for proposals whose subject is
+  failure, recovery or defect handling.
+- Both review skills: the Quick workflow now loads the finding rules, delivers its map, has its own
+  chat skeleton with a lenses-applied line, and no longer conflicts with the format file over writing
+  a file. Intake gains a README row, a citation convention for plain Markdown and a rule for dateless
+  artifacts. Found by a cold run of ResilienceReview against a public README.
+
 ## 0.2.0 - 2026-11-09
 
 - Added **DeliveryReview**: a lean and agile review of proposals that change how software is

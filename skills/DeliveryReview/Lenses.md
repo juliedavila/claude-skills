@@ -212,6 +212,8 @@ Thinker pages marked **(TD)** have a full editorial reading, including each thin
 - Erik Hollnagel **(TD)**: the efficiency-thoroughness trade-off, which people make all day, so procedures that demand both are fiction.
 - Nancy Leveson **(TD)** `nancy-leveson`: STPA, safety as a control problem; useful when the proposal automates a decision that used to have a human in the loop.
 
+**Going deeper:** when the proposal's main subject is failure, recovery, hazards or defect handling, hand it to the ResilienceReview skill, which treats each of these as its own lens.
+
 **Where this lens breaks:** Not everything needs resilience engineering. An internal tool with a ten-person user base can fail loudly and get fixed Monday. Size the operational ask to the cost of the outage.
 
 ---

@@ -15,6 +15,7 @@ Each skill is a folder with a `SKILL.md` that Claude loads when a request matche
 | **WritingPartner** | A piece of business writing needs drafting, a critique or an edit, so it reads clearly to its reader and sounds like a person rather than a corporation or a model. |
 | **DalioDecisionMemo** | A document asks someone to make a decision, in Ray Dalio's layered, expected-value style. |
 | **DalioStrategyAnalysis** | You are writing a strategy, plan, or recurring status or risk report, built on a model of how the system works and where it stands now. |
+| **ResilienceReview** | A design, architecture, operating model or defect and vulnerability program should be reviewed for how it fails, how defects get found and fixed, and how it recovers. |
 | **DalioDiagnosisPrinciples** | You are writing up a postmortem or diagnosis once the causes are known, or drafting team operating principles. |
 
 ## Install
