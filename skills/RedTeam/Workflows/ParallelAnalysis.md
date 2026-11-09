@@ -459,6 +459,3 @@ The 8-point sequence should:
 - Phase 4: 2-3 minutes (final output)
 - Total: ~10-15 minutes for comprehensive red team
 
----
-
-**Last Updated:** 2025-11-24

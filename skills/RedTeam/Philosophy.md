@@ -32,6 +32,3 @@ The most powerful critique is usually ONE core issue:
 
 Each agent type brings unique attack angles - see `Workflows/ParallelAnalysis.md` for full roster.
 
----
-
-**Last Updated:** 2025-12-20

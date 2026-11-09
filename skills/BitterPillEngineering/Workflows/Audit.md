@@ -7,8 +7,7 @@ Full audit of all force-loaded AI instructions for over-prompting.
 ### 1. Discover what's loaded
 
 Read `settings.json` to find:
-- `loadAtStartup.files` — force-loaded every session
-- `postCompactRestore.fullFiles` — re-loaded after compaction
+- whatever the harness force-loads every session (in Claude Code: CLAUDE.md files and their @-imports, plus any startup or post-compaction load lists the setup adds)
 - `dynamicContext` sections — relationship, learning, work summaries
 - CLAUDE.md — native instruction file
 

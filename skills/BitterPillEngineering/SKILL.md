@@ -1,6 +1,6 @@
 ---
 name: BitterPillEngineering
-description: "Audits any AI instruction set for over-prompting using the core test: would a smarter model make this rule unnecessary? Applies Five Questions to every rule (Does Claude already do this? Contradiction? Redundant? One-off fix? Vague?) then classifies each as CUT / RESOLVE / MERGE / EVALUATE / SHARPEN / MOVE / KEEP. Two workflows: Audit (full system, reads all force-loaded files from settings.json, reports token savings estimate) and QuickCheck (single file, fast keep/cut/sharpen verdict). Core principle: less scaffolding means better output; every unnecessary rule competes for attention and degrades the rules that matter. Anti-fragile rules to KEEP: verification harnesses, ISC, data pipelines, specific DO/DON'T examples, tool preferences, routing rules. Fragile rules to CUT: CoT orchestrators, format parsers, retry cascades, numeric personality scales, abstract value statements. Requires loadAtStartup and postCompactRestore.fullFiles to stay in sync in settings.json. USE WHEN auditing an instruction set, prompt, rules file, or CLAUDE.md for over-prompting and dead weight. NOT FOR general code simplification or refactoring (use simplify skill). NOT FOR attacking logical or strategic flaws in ideas (use RedTeam for that)."
+description: "Audits any AI instruction set (CLAUDE.md, rules files, system prompts, skill text) for over-prompting with one test: would a smarter model make this rule unnecessary? Applies five questions to every rule (already default behaviour? contradiction? redundant? one-off fix? vague?) and classifies each as CUT, RESOLVE, MERGE, EVALUATE, SHARPEN, MOVE to on-demand or KEEP. Keeps anti-fragile rules (verification harnesses, testable criteria, specific DO/DON'T examples, tool preferences, routing) and cuts fragile ones (chain-of-thought orchestration, format parsers, retry cascades, numeric personality scales, abstract values). Two workflows: Audit (every always-loaded file, with an estimate of tokens saved) and QuickCheck (one file, fast verdict). USE WHEN auditing an instruction set, prompt, rules file or CLAUDE.md for over-prompting and dead weight. NOT FOR code simplification, or for attacking the logic of an idea (use RedTeam)."
 effort: medium
 ---
 
@@ -49,7 +49,7 @@ User: "I trimmed my rules, check if anything's still redundant"
 - Claude's built-in system prompt changes across versions — what was "default behavior" 3 months ago may not be now. When in doubt, test rather than assume.
 - Rules that seem redundant with defaults may have been added because Claude was inconsistent about following the default. Check failure history before cutting.
 - "One-off fix" rules sometimes prevent recurring failures. Check if the failure pattern is truly gone before removing.
-- The `loadAtStartup` list in settings.json and `postCompactRestore.fullFiles` must stay in sync — if you remove a file from one, check the other.
+- Harnesses often force-load files from more than one place (a startup list, a post-compaction restore list, an @-import). When you remove a file from one, check the others, or it comes back.
 
 ## The Five Questions
 

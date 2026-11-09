@@ -20,13 +20,13 @@ Both failure modes feel fine while they happen. So the standing conditions worth
 the ones that make those two failures *visible*, early, from outside your own sense of how it is
 going.
 
-## Boundary with Internalize (read before doing anything)
+## Boundary with the per-topic learning loop (read before doing anything)
 
-`Internalize` owns the per-topic loop: learn THIS to conviction, the cold-recall gate, the ELI5
+A companion skill, `Internalize` where it is installed, owns the per-topic loop: learn THIS to conviction, the cold-recall gate, the ELI5
 and peer-defense passes, and the spaced review and interleaved discrimination of models already
 built. **Do not re-implement any of that here.** This skill decides *what deserves that
 treatment*, sets up the conditions for it, and tells you whether it is working over months.
-When a topic earns deep work, hand off to `Internalize` and stop.
+When a topic earns deep work, hand off to `Internalize` if it is installed and stop; if it is not, say that the topic earned deep work and let the user choose how to do it. Do not improvise a study method here.
 
 ## Workflow Routing
 

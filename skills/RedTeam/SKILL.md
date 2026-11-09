@@ -4,79 +4,30 @@ description: "Military-grade adversarial analysis that deploys 32 parallel exper
 effort: high
 ---
 
-# RedTeam Skill
+# RedTeam
 
-Military-grade adversarial analysis using parallel agent deployment. Breaks arguments into atomic components, attacks from 32 expert perspectives (engineers, architects, pentesters, interns), synthesizes findings, and produces devastating counter-arguments with steelman representations.
+Adversarial analysis of ideas, plans and strategies using parallel agents. The argument is broken into atomic claims, attacked from many expert perspectives at once, and rebuilt as the strongest version of itself beside the strongest case against it. The goal is to strengthen the idea before someone else finds the hole, so every weakness arrives with a remediation path.
 
-## Workflow Routing
+## Workflows
 
-Route to the appropriate workflow based on the request.
+| Workflow | Use when | File |
+|---|---|---|
+| **ParallelAnalysis** | Existing content (a plan, a proposal, an argument) should be stress-tested. Returns a steelman and a counter-argument, eight points each. | `Workflows/ParallelAnalysis.md` |
+| **AdversarialValidation** | New content should emerge from competition: competing proposals are generated, attacked and synthesized into the best solution. | `Workflows/AdversarialValidation.md` |
 
-**When executing a workflow, output this notification directly:**
+**The five phases of ParallelAnalysis:** decompose into 24 atomic claims; 32 agents examine strengths and weaknesses in parallel; synthesize the convergent findings; write the steelman; write the counter-argument.
 
-```
-Running the **WorkflowName** workflow in the **RedTeam** skill to ACTION...
-```
-
-| Trigger | Workflow |
-|---------|----------|
-| Red team analysis (stress-test existing content) | `Workflows/ParallelAnalysis.md` |
-| Adversarial validation (produce new content via competition) | `Workflows/AdversarialValidation.md` |
-
----
-
-## Quick Reference
-
-| Workflow | Purpose | Output |
-|----------|---------|--------|
-| **ParallelAnalysis** | Stress-test existing content | Steelman + Counter-argument (8-points each) |
-| **AdversarialValidation** | Produce new content via competition | Synthesized solution from competing proposals |
-
-**The Five-Phase Protocol (ParallelAnalysis):**
-1. **Decomposition** - Break into 24 atomic claims
-2. **Parallel Analysis** - 32 agents examine strengths AND weaknesses
-3. **Synthesis** - Identify convergent insights
-4. **Steelman** - Strongest version of the argument
-5. **Counter-Argument** - Strongest rebuttal
-
----
-
-## Context Files
-
-- `Philosophy.md` - Core philosophy, success criteria, agent types
-- `Integration.md` - Skill integration, FirstPrinciples usage, output format
-
----
+Context files: `Philosophy.md` (what success looks like, the agent types) and `Integration.md` (how other skills call this one, including FirstPrinciples for decomposing assumptions first, and the output format).
 
 ## Examples
 
-**Attack an architecture proposal:**
-```
-User: "red team this microservices migration plan"
---> Workflows/ParallelAnalysis.md
---> Returns steelman + devastating counter-argument (8 points each)
-```
-
-**Devil's advocate on a business decision:**
-```
-User: "poke holes in my plan to raise prices 20%"
---> Workflows/ParallelAnalysis.md
---> Surfaces the ONE core issue that could collapse the plan
-```
-
-**Adversarial validation for content:**
-```
-User: "battle of bots - which approach is better for this feature?"
---> Workflows/AdversarialValidation.md
---> Synthesizes best solution from competing ideas
-```
-
----
-
-**Last Updated:** 2025-12-20
+- "Red team this microservices migration plan" runs ParallelAnalysis and returns the steelman and the counter-argument.
+- "Poke holes in my plan to raise prices 20%" runs ParallelAnalysis and surfaces the one issue that could collapse the plan.
+- "Which of these two approaches is better for this feature?" runs AdversarialValidation and synthesizes the best of both.
 
 ## Gotchas
 
-- **RedTeam is for attacking IDEAS, not systems.** This skill finds flaws in arguments, strategies, and plans — not network vulnerabilities.
-- **32 adversarial agents generate volume — not all findings are equal.** Rank by severity, discard noise.
-- **The goal is to strengthen, not destroy.** Present weaknesses constructively with remediation paths.
+- **Attack ideas, not systems.** This skill finds flaws in arguments, strategies and plans, never network or application vulnerabilities.
+- **Volume is not severity.** Thirty-two agents produce many findings; rank by what would actually break the plan and discard the noise.
+- **Strengthen, do not destroy.** A weakness without a remediation path is not finished.
+- **Decompose before attacking.** When the plan rests on stated constraints, run FirstPrinciples Challenge over them first, so the agents attack the real assumptions rather than the wording.

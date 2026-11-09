@@ -3,6 +3,19 @@
 Versions follow [Semantic Versioning](https://semver.org). A new skill or a new workflow in an
 existing skill is a minor bump; a fix to an existing skill's text or tooling is a patch.
 
+## 0.3.1 - 2026-11-09
+
+- Prompt audit of all twelve skills. Descriptions trimmed under the listing cutoff (ResilienceReview
+  was being truncated); thinker rosters moved out of descriptions and into the lens files.
+- FirstPrinciples, RedTeam, RootCauseAnalysis and SystemsThinking bodies deduplicated: one
+  statement of each method, one routing table, merged gotchas, stale date stamps and leftover
+  notification lines removed. Attributions made precise (first principles predates its popularizer;
+  the Five Whys credit is stated as contested; named works replace "tradition").
+- BitterPillEngineering no longer names one harness's settings keys; LearningConditions treats the
+  companion Internalize skill as optional.
+- WritingPartner keeps every rule and template; the research sentences behind the rules now live
+  only in References/evidence.md, which already carried them with sources.
+
 ## 0.3.0 - 2026-11-09
 
 - Added **ResilienceReview**: a safety-science and resilience-engineering review of designs,
