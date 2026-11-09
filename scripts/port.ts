@@ -5,7 +5,9 @@
 //
 // Stripped automatically: sections headed Customization, Voice Notification and Execution Log.
 // Anything still coupled afterwards is reported and fails the run, for a hand edit.
-import { cp, rm, readdir } from "node:fs/promises";
+// A skill authored in this repo and linked into the private directory (scripts/install.ts) is
+// refused: its source of truth is already here, so edit it under skills/ directly.
+import { cp, rm, readdir, realpath } from "node:fs/promises";
 import { join } from "node:path";
 import { homedir } from "node:os";
 import { COUPLING } from "./guard.ts";
@@ -51,6 +53,7 @@ for (const name of process.argv.slice(2)) {
   if (name.startsWith("_")) { console.error(`✗ ${name}: underscore skills are private by convention; not porting`); failed = true; continue; }
   const src = join(SOURCE, name), dst = join(DEST, name);
   if (!(await Bun.file(join(src, "SKILL.md")).exists())) { console.error(`✗ ${name}: no SKILL.md at ${src}`); failed = true; continue; }
+  if ((await realpath(src)).startsWith(await realpath(DEST))) { console.error(`✗ ${name}: source links back into this repo; it is repo-native, edit skills/${name} directly`); failed = true; continue; }
   await rm(dst, { recursive: true, force: true });
   await cp(src, dst, { recursive: true });
   const leftovers: string[] = [];

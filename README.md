@@ -43,7 +43,9 @@ Claude config directory.
 
 ## Adding a skill
 
-Skills are written in a private setup first, then ported here.
+Most skills are written in a private setup first, then ported here. A skill can also be
+authored in this repo directly (DeliveryReview is one); run `bun scripts/install.ts` to link it
+into your Claude config directory, and the port script will refuse to overwrite it from there.
 
 1. `bun scripts/port.ts SkillName` copies the skill from `~/.claude/skills` (or `$SKILLS_SOURCE`) <!-- guard:allow -->
    and strips the private-system sections it knows about.
