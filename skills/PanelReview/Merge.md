@@ -14,7 +14,7 @@ Strengths fold the same way. A strength one seat names and another seat contradi
 
 ## 3. Apply precedence to conflicts
 
-When two seats disagree about the same place, the layer order decides: **substance (DeliveryReview, ResilienceReview) over structure (the Dalio checklist) over visuals (VisualizeReview) over prose (WritingPartner)**. The winning finding becomes the hole; the losing finding is kept, verbatim, under "Conflicts between reviewers" with one line on why it lost. Two rules refine the order:
+When two seats disagree about the same place, the layer order decides: **substance (DeliveryReview, ResilienceReview) over structure (the Dalio checklist, or SlidePartner for a deck) over visuals (VisualizeReview) over prose (WritingPartner)**. The winning finding becomes the hole; the losing finding is kept, verbatim, under "Conflicts between reviewers" with one line on why it lost. Two rules refine the order:
 
 - A visual that replaces a passage beats a prose cut of that passage. The passage becomes the figure's caption, and the prose finding is noted as resolved by the figure.
 - A prose finding that the reader cannot resolve a term or a reference (WritingPartner's cold-reader pass) is never outranked; it is folded into the substance or visual hole at that place as an added concern, because the other layers' fixes depend on the reader understanding the sentence.

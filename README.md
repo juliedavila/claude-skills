@@ -13,6 +13,7 @@ Each skill is a folder with a `SKILL.md` that Claude loads when a request matche
 | **LearningConditions** | You are setting up, repairing or checking a learning practice. |
 | **DeliveryReview** | A design proposal, RFC or strategy deck would change how software gets built, shipped or run, and you want a lean and agile review of it. |
 | **WritingPartner** | A piece of business writing needs drafting, a critique or an edit, so it reads clearly to its reader and sounds like a person rather than a corporation or a model. |
+| **SlidePartner** | A deck needs its argument and order worked out before the slides: what it is for, the claim each slide makes, and how it changes between a pre-read and a live presentation. Also reviews an existing deck and converts between the two. |
 | **VisualizeReview** | A deck, document or page should be reviewed for whether its charts, diagrams, tables and layout carry the story, and for what should have been a visual and wasn't. |
 | **PanelReview** | A package should be reviewed from several angles at once: the review skills run as parallel seats in fresh contexts and their findings merge into one ranked review with an order of work. |
 | **DalioDecisionMemo** | A document asks someone to make a decision, in Ray Dalio's layered, expected-value style. |

@@ -3,6 +3,23 @@
 Versions follow [Semantic Versioning](https://semver.org). A new skill or a new workflow in an
 existing skill is a minor bump; a fix to an existing skill's text or tooling is a patch.
 
+## 0.6.0 - 2026-11-25
+
+- Added **SlidePartner**: a partner for working out how a slide deck should carry its content before
+  any slide is built. It settles the medium (presented live, read alone, or both) and the purpose
+  (a debrief or a decision), writes the deck as an ordered list of claim titles, and renders it for
+  the medium. Four modes: Storyline, Slides (a slide-by-slide spec), Critique (a fixed rubric) and
+  Convert. Nine storyline patterns, a checklist of what a speaker supplies that a reading deck must
+  print, and six checks that keep persuasion honest.
+- The skill rests on a graded evidence file: about ninety sources, each rule marked strong,
+  experimental, consensus, contested or untested, with a folklore table and a list of what nobody
+  has tested. Every DOI was resolved against Crossref before release.
+- PanelReview routes a deck to the SlidePartner critique at the structure layer.
+- A cold run by a fresh agent across all four modes logged twenty-six usability seams, and two
+  independent reads by a second model found thirteen contradictions and overclaims. All were fixed
+  before release, among them a title rule that had no room for question slides, a rubric that could
+  flag a debrief for having no decision, and a pre-read followed by a meeting treated as one deck.
+
 ## 0.5.0 - 2026-11-09
 
 - Added **PanelReview**: runs several review skills over one package as parallel seats, each in a

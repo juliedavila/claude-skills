@@ -10,7 +10,7 @@ Decide the package type from the artifacts and the user's context, then take the
 | Decision memo or decision-meeting pre-read | Dalio structure seat (DalioDecisionMemo checklist) · WritingPartner (critique) · VisualizeReview, plus the substance seat the decision's subject calls for | Decider, options as bets, disagreement log, closure · prose · the one visual at the decision point |
 | Strategy, plan, recurring status or risk report | Dalio structure seat (DalioStrategyAnalysis checklist) · VisualizeReview · WritingPartner (critique) | Nutshell, machine, archetype, gauges and exhibits · exhibits as visuals · prose |
 | Postmortem or diagnosis write-up, operating principles | Dalio structure seat (DalioDiagnosisPrinciples checklist) · ResilienceReview (lens 8, learning) · WritingPartner (critique) | Proximate causes as verbs, root causes as design adjectives · whether the learning changes the system · prose |
-| Slide deck for a talk or a pitch | VisualizeReview · WritingPartner (critique), plus a substance seat if the deck proposes a change | Narrative order, one idea per slide, the visual at the ask · the words on the slides and in the notes |
+| Slide deck: a talk, a pitch, a briefing or a pre-read | SlidePartner (critique) · VisualizeReview · WritingPartner (critique), plus a substance seat if the deck proposes a change | Whether the argument, its order and its rendering fit the audience and the medium · the visual at the ask and what should be a visual · the words on the slides and in the notes |
 
 ## The Dalio structure seat
 
